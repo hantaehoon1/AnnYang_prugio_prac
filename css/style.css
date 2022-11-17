@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style:none;
+  font-family:"맑은고딕";
+}
+
+a{
+  display:block;
+  text-decoration: none;
+}
+
+header {
+  border:3px solid blue;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+ 
+}
+
+.logo > span {
+  display: block;
+  font-size: 20px;
+  border:3px solid yellow;
+  padding-right: 100px;
+}
+
+.wrap{
+  display: flex;
+}
+
+.wrap > div:first-child {
+  flex:1 1 0%;
+}
+
+.wrap > div:last-child {
+  flex:1 1 0%;
+}
+
+.menu {
+  min-width: 1000px;
+  position:relative;
+}
+
+.menu > ul {
+  display: flex;
+  align-items: center;
+  height:100%;
+  border:3px solid blue;
+}
+
+.menu > ul > li {
+  padding:30px 30px;
+  white-space: nowrap;
+}
+
+.menu > ul > li > a {
+  font-size: 18px;
+}
+.submenu{
+  position:absolute;
+  top:150px;
+  text-align: center;
+}
+
+.submenu>li:first-child{
+  border:3px solid pink;
+}
+
+.btwrap {
+  display: flex;
+  white-space: nowrap;
+}
+
+.btwrap>div{
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.banner > span {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.phonenumber > img {
+  padding-right:10px;
+  width:18px;
+  height:18px;
+}
+
+.phonenumber>span{
+  font-size: 18px;
+}
