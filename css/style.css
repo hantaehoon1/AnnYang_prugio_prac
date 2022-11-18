@@ -12,10 +12,6 @@ a{
   text-decoration: none;
 }
 
-header {
-  border:3px solid blue;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -44,32 +40,49 @@ header {
 
 .menu {
   min-width: 1000px;
-  position:relative;
 }
 
 .menu > ul {
   display: flex;
   align-items: center;
   height:100%;
-  border:3px solid blue;
 }
 
 .menu > ul > li {
-  padding:30px 30px;
+  padding:20px 50px;
   white-space: nowrap;
+  position:relative;
+}
+
+.menu > ul > li:hover {
+  border-bottom:3px solid #424242;
+  box-sizing: border-box;
 }
 
 .menu > ul > li > a {
-  font-size: 18px;
-}
-.submenu{
-  position:absolute;
-  top:150px;
-  text-align: center;
+  font-size: 15px;
 }
 
-.submenu>li:first-child{
-  border:3px solid pink;
+.submenu{
+  position:absolute;
+  top:110px;
+  text-align: center;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  display: none;
+}
+
+.submenu>li>a{
+  /* border:3px solid pink; */
+  font-size:13px;
+  padding:8px;
+  color:#919190
+}
+
+li:nth-child(4)>.submenu>li>a:nth-child(7){
+  border:3px solid red;
+  letter-spacing: -1px;
 }
 
 .btwrap {
@@ -78,7 +91,7 @@ header {
 }
 
 .btwrap>div{
-  padding: 30px 10px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
 }
