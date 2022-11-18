@@ -4,12 +4,21 @@
   margin: 0 auto;
   padding: 0;
   list-style:none;
-  font-family:"맑은고딕";
+  font-family:'Noto Sans KR', sans-serif;
 }
 
 a{
   display:block;
   text-decoration: none;
+}
+
+header::before{
+  content:"";
+  display: block;
+  width:100%;
+  position: absolute;
+  background-color: red;
+   
 }
 
 .logo {
@@ -22,12 +31,13 @@ a{
 .logo > span {
   display: block;
   font-size: 20px;
-  border:3px solid yellow;
   padding-right: 100px;
 }
 
 .wrap{
   display: flex;
+  background-color: aqua;
+  
 }
 
 .wrap > div:first-child {
@@ -52,12 +62,29 @@ a{
   padding:20px 50px;
   white-space: nowrap;
   position:relative;
+  border:3px solid red;
 }
 
-.menu > ul > li:hover {
+.menu > ul > li::after {
+  content:"";
+  display:block;
+  background-color: #424242;
+  width:100%;
+  height:3px;
+  position:absolute;
+  bottom: 0;
+  left:0;
+  display: none;
+}
+
+.menu > ul > li:hover::after{
+  display:block;
+}
+
+/* .menu > ul > li:hover {
   border-bottom:3px solid #424242;
   box-sizing: border-box;
-}
+} */
 
 .menu > ul > li > a {
   font-size: 15px;
@@ -74,7 +101,6 @@ a{
 }
 
 .submenu>li>a{
-  /* border:3px solid pink; */
   font-size:13px;
   padding:8px;
   color:#919190
