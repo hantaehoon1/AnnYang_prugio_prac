@@ -14,16 +14,17 @@ a{
 
 header{
   width:100%;
-  height: 100px;
+  height:70px;
   border:3px solid blue;
   position:relative;
+  z-index: 99;
 }
 
 .logo {
   display: flex;
+  height: 70px;
   align-items: center;
   white-space: nowrap;
- 
 }
 
 .logo > span {
@@ -34,13 +35,14 @@ header{
 
 .wrap{
   width:100%;
-  height: 100px;
   display: flex;
+  height: 70px;
+  align-items: flex-start;
   background-color: aqua;
   position:absolute;
   left:0;
   top:0;
-  z-index: 1;
+  
 }
 
 .wrap > div:first-child {
@@ -120,9 +122,11 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
 }
 
 .btwrap>div{
-  padding: 20px 10px;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
+  border:3px solid red;
+
 }
 
 .banner > span {
@@ -147,6 +151,7 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   padding:30px 0 0 40px;
   transition:0.3s;
   position: relative;
+  
 }
 
 .slider-box-1.first-slide-actived {
@@ -159,6 +164,7 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   border:3px solid green;
   transition: 0.3s;
   border-radius:50px 0 0 0;
+  
 }
 
 .slider-box-1.first-slide-actived .swiper {
