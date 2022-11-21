@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
   <meta charset="utf-8">
   <title>안양역 푸르지오 더샾</title>
@@ -8,7 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
   <script src="javascript/jquery.min.js"></script>
   <script src="javascript/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css">
 </head>
+
 <body>
   <header>
     <div class="wrap" id="bgwrap">
@@ -50,7 +55,7 @@
                 <a href="">서류제출안내문</a>
                 <a href="">공급계약안내문</a>
                 <a href="">자금조달계획서 작성방법</a>
-              </li> 
+              </li>
             </ul>
           </li>
           <li>
@@ -62,7 +67,7 @@
                 <a href="">커뮤니티</a>
                 <a href="">단지배치도</a>
                 <a href="">동호수배치도</a>
-              </li>  
+              </li>
             </ul>
           </li>
           <li>
@@ -73,7 +78,7 @@
                 <a href="">E모델하우스</a>
                 <a href="">인테리어</a>
                 <a href="">특화시스템</a>
-              </li>  
+              </li>
             </ul>
           </li>
           <li>
@@ -84,7 +89,7 @@
                 <a href="">언론보도</a>
                 <a href="">분양설문</a>
                 <a href="">관심고객등록</a>
-              </li>  
+              </li>
             </ul>
           </li>
         </ul>
@@ -96,8 +101,31 @@
         <div class="phonenumber">
           <img src="images/phone.png" alt="폰그림">
           <span>031.8040.9740</span>
-        </div> 
+        </div>
       </div>
     </div>
   </header>
+
+  <div class="slider-box-1">
+    <!-- 슬라이더 메인 컨테이너 -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- 슬라이드 -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+      </div>
+      <!-- 슬라이드 페이지 -->
+      <div class="swiper-pagination"></div>
+
+      <!-- 화살표 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
 </body>
+
+</html>

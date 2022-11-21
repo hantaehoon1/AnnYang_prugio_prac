@@ -38,6 +38,8 @@ header{
   display: flex;
   background-color: aqua;
   position:absolute;
+  left:0;
+  top:0;
   z-index: 1;
 }
 
@@ -137,4 +139,52 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
 
 .phonenumber>span{
   font-size: 18px;
+}
+
+.slider-box-1 {
+  border:3px solid red;
+  height:500px;
+  padding:30px 0 0 40px;
+  transition:0.3s;
+  position: relative;
+}
+
+.slider-box-1.first-slide-actived {
+  padding:0;
+}
+
+.slider-box-1 .swiper {
+  width:100%;
+  height:100%;
+  border:3px solid green;
+  transition: 0.3s;
+  border-radius:50px 0 0 0;
+}
+
+.slider-box-1.first-slide-actived .swiper {
+  border-radius: 0;
+  border:3px solid blue;
+}
+
+.slider-box-1 .swiper-slide {
+  background-color: orange;
+}
+
+.slider-box-1::before {
+  content:"";
+  background-color: darkgreen;
+  width:200px;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transition:1s;
+}
+
+.slider-box-1 .first-slide-actived::before {
+  width:100%;
+}
+
+.slider-box-1[index-num="3"]::before {
+  background-color: darkblue;
 }
