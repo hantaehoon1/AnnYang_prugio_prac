@@ -147,7 +147,8 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
 
 .slider-box-1 {
   border:3px solid red;
-  height:500px;
+  width:100%;
+  height:950px;
   padding:30px 0 0 40px;
   transition:0.3s;
   position: relative;
@@ -172,10 +173,6 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   border:3px solid blue;
 }
 
-.slider-box-1 .swiper-slide {
-  background-color: orange;
-}
-
 .slider-box-1::before {
   content:"";
   background-color: darkgreen;
@@ -193,4 +190,71 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
 
 .slider-box-1[index-num="3"]::before {
   background-color: darkblue;
+}
+
+.swiper-slide1 {
+  position: relative;
+}
+
+.swiper-slide1 span{
+  position: absolute;
+  top:200px;
+  left:100px;
+}
+
+.swiper-slide1 h2{
+  
+  position: absolute;
+  top:230px;
+  left:100px;
+}
+
+.swiper-slide2 {
+  position: relative;
+}
+
+.swiper-slide2 span{
+  position: absolute;
+  top:200px;
+  left:100px;
+}
+
+.swiper-slide2 h2{
+  
+  position: absolute;
+  top:230px;
+  left:100px;
+}
+
+.swiper-slide3 {
+  position: relative;
+}
+
+.swiper-slide3 span{
+  position: absolute;
+  top:200px;
+  left:100px;
+}
+
+.swiper-slide3 h2{
+  
+  position: absolute;
+  top:230px;
+  left:100px;
+}
+.swiper-slide4 {
+  position: relative;
+}
+
+.swiper-slide4 span{
+  position: absolute;
+  top:200px;
+  left:100px;
+}
+
+.swiper-slide4 h2{
+  
+  position: absolute;
+  top:230px;
+  left:100px;
 }

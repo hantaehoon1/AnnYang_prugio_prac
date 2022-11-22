@@ -1,7 +1,7 @@
 jQuery(document).ready(function () {
   $('.menu>ul').mouseover(function () {
     $(this).find('.submenu').stop().slideDown(100);
-    $('#bgwrap').stop().animate({ height: '300px' })
+    $('#bgwrap').stop().animate({ height: '400px' })
   }).mouseout(function () {
     $(this).find('.submenu').stop().slideUp(100);
     $('#bgwrap').stop().animate({ height: '70px' })
