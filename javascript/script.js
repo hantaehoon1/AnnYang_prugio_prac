@@ -31,7 +31,7 @@ jQuery(document).ready(function () {
 
       $('.slider-box-1').removeClass('first-slide-actived');
 
-      if (swiper.activeIndex == 1 || swiper.activeIndex == 6) {
+      if (swiper.activeIndex == 1 || swiper.activeIndex == 5) {
 
         // slider-box-1에 first-slide-actived 클래스 추가
         $(".slider-box-1").addClass("first-slide-actived");
