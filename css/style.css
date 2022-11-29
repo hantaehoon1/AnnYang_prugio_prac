@@ -220,12 +220,31 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
 .premium7 {
   background: url("https://www.prugio.com/ht/2022/anyang/web/img/main1-bg.png") no-repeat;
   background-size: cover;
-  padding:90px 80px 0;
+  padding:90px 80px;
   position: relative;
   width:100%;
   height:866px;
   border:3px solid red;
+  display: flex;
 }
+
+.slider-box-2 .swiper {
+  margin:40px 0;
+  width: 600px;
+  height: 706px;
+  border:3px solid blue;
+}
+
+.premium7 .inner {
+  margin-right:300px;
+  border:3px solid gold;
+}
+
+.slider-box-2 {
+  border:3px solid green;
+}
+
+
 
 .logo-amenity {
   display: flex;
@@ -311,4 +330,5 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   top:40px;
   left:50px;
 }
+
 
