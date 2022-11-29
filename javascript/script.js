@@ -45,3 +45,22 @@ jQuery(document).ready(function () {
 
   }
 });
+
+function SliderBox2__init() {
+  const swiper = new Swiper(".slider-box-2 .swiper", {
+    // Optional parameters
+    loop: true,
+    // 한 화면에 보일 슬라이드 개수
+    slidesPerView: 3.2,
+    // 슬라이드 간의 간격
+    spaceBetween: 20,
+    
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slider-box-1 .swiper-button-next",
+      prevEl: ".slider-box-1 .swiper-button-prev"
+    }
+  });
+}
+
+SliderBox2__init();

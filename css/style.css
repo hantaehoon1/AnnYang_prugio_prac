@@ -228,23 +228,23 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   display: flex;
 }
 
-.slider-box-2 .swiper {
-  margin:40px 0;
-  width: 600px;
-  height: 706px;
-  border:3px solid blue;
-}
-
 .premium7 .inner {
   margin-right:300px;
   border:3px solid gold;
 }
 
+
 .slider-box-2 {
   border:3px solid green;
+  display: flex;
+
 }
 
-
+.slider-box-2 .swiper {
+  margin:40px 0;
+  width: 600px;
+  border:3px solid blue;
+}
 
 .logo-amenity {
   display: flex;
