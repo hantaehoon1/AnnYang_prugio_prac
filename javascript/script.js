@@ -66,8 +66,8 @@ function SliderBox2__init() {
     },
 
     navigation: {
-      nextEl: ".slider-box-2 .swiper-button-next",
-      prevEl: ".slider-box-2 .swiper-button-prev"
+      nextEl: ".premium7-button .next",
+      prevEl: ".premium7-button .prev"
     }
   });
 }

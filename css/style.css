@@ -11,6 +11,7 @@
 a{
   display:block;
   text-decoration: none;
+  color:inherit;
 }
 
 header{
@@ -30,6 +31,7 @@ header{
 .logo > span {
   display: block;
   font-size: 20px;
+  padding-left:10px;
   padding-right: 100px;
   color: #ffffff;
 }
@@ -149,7 +151,6 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   transition:0.3s;
   position:relative;
   height:100vh;
-  border:3px solid blue;
 }
 
 .slider-box-1::before {
@@ -161,7 +162,6 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   top:0;
   left:0;
   transition:1s;
-  border:3px solid red;
 }
 
 .slider-box-1.first-slide-actived {
@@ -189,17 +189,18 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   width:100%;
 }
 
-.swiper-slide span{
+.slide-box-1 .swiper-slide span{
   position: absolute;
   top:200px;
   left:100px;
+  color:#ffffff;
 }
 
-.swiper-slide h2{
-  
+.slide-box-1 .swiper-slide h2{
   position: absolute;
   top:230px;
   left:100px;
+  color:#ffffff;
 }
 
 .slider-box-1 .swiper-slide > a{
@@ -248,11 +249,11 @@ li:nth-child(4)>.submenu>li>a:nth-child(7){
   position:absolute;
 }
 
-.swiper .swiper-slide.swiper-slide-active {
+.slider-box-2 .swiper .swiper-slide.swiper-slide-active {
   transform:translatey(-20px);
 }
 
-.swiper .swiper-slide.swiper-slide-active img:last-child {
+.slider-box-2 .swiper .swiper-slide.swiper-slide-active img:last-child {
   opacity:0;
 }
 .logo-amenity {
