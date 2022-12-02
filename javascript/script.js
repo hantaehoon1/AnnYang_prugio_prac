@@ -19,6 +19,10 @@ jQuery(document).ready(function () {
         el: ".slider-box-1 .swiper-pagination"
       },
 
+      autoplay: {
+        delay:5000,
+        disableOnInteraction:false,
+      },
       // Navigation arrows
       navigation: {
         nextEl: ".slider-box-1 .swiper-button-next",
@@ -54,11 +58,16 @@ function SliderBox2__init() {
     slidesPerView: 3.2,
     // 슬라이드 간의 간격
     spaceBetween: 20,
-    
     // Navigation arrows
+
+    autoplay: {
+    delay:5000,
+    disableOnInteraction:false,
+    },
+
     navigation: {
-      nextEl: ".slider-box-1 .swiper-button-next",
-      prevEl: ".slider-box-1 .swiper-button-prev"
+      nextEl: ".slider-box-2 .swiper-button-next",
+      prevEl: ".slider-box-2 .swiper-button-prev"
     }
   });
 }
