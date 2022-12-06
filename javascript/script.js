@@ -73,3 +73,14 @@ function SliderBox2__init() {
 }
 
 SliderBox2__init();
+
+$(window).scroll(function(){
+  let scroll = $(this).scrollTop();
+  console.log(scroll);
+  if(scroll > 2000) { // 스크롤 위치가 2000이상일 때
+    $('.sub-bg').removeClass('active');
+    $('.sub-bg img').removeClass('active');
+    $('.sub-bg').addClass('active');
+    $('.sub-bg img').addClass('active');
+  }
+});
