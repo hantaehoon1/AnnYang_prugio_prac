@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
 
       // If we need pagination
       pagination: {
-        el: ".slider-box-1 .swiper-pagination"
+        el: ".pagination-swiper .span"
       },
 
       autoplay: {
