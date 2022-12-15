@@ -216,6 +216,17 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   height: 100%;
 }
 
+.cont {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 25px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: -60px;
+}
+
 .slider-box-1 .vis-control .pagination-swiper {
   position: absolute;
   z-index: 99;
