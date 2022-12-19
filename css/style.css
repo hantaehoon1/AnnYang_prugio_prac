@@ -210,6 +210,72 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   height: 100%;
 }
 
+.slider-box-1 .swiper .swiper-pagination {
+  border:3px solid red;
+  display: flex;
+  width: 550px;
+  left: auto;
+  right: 100px;
+}
+
+.slider-box-1 .swiper .swiper-pagination .swiper-pagination-bullet {
+    border:3px solid red;
+  border-radius: 0;
+  width: calc(100% / 4);
+  padding-bottom: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: transparent;
+  position: relative;
+  opacity: 1;
+}
+
+.slider-box-1 .swiper .swiper-pagination-bullet {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-box-1 .swiper .swiper-pagination-bullet-active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.slider-box-1 .swiper .swiper-pagination-bullet ~ .swiper-pagination-bullet {
+  border:3px solid blue;
+  margin-left: 65px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-box-1 .swiper .swiper-pagination-bullet ~ .swiper-pagination-bullet-active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.slider-box-1 .swiper-pagination-bullet ~ .swiper-pagination-bullet::before {
+  content: "";
+  background-color: #d5d5d5;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  left: -53px;
+  top: 13px;
+}
+
+.slider-box-1 .swiper .swiper-pagination .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform:translatex(-50%);
+  bottom: 0;
+  background-color: #fff;
+  width: 0;
+  height: 3px;
+  transition: 0.3s;
+}
+
+.slider-box-1 .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
+  width: 100%;
+}
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -225,23 +291,6 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   color: #fff;
   text-align: center;
   margin-top: -60px;
-}
-
-.slider-box-1 .vis-control .pagination-swiper {
-  position: absolute;
-  z-index: 99;
-  border: 3px solid red;
-}
-
-.slide-box-1 .vis-control .swiper-pagination-bullet::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  background-color: #fff;
-  width: 0;
-  height: 3px;
-  transition: 0.3s;
 }
 
 aside {

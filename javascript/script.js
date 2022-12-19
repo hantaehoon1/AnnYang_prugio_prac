@@ -10,18 +10,37 @@ jQuery(document).ready(function () {
   SliderBox1__init();
 
   function SliderBox1__init() {
+
+    var bullet = [
+      "01 투시도",
+      "02 투시도",
+      "03 조감도",
+      "04 조감도"
+    ];
+    
     const swiper = new Swiper(".slider-box-1 .swiper", {
       // Optional parameters
       loop: true,
 
       // If we need pagination
+      // 수정 및 추가
       pagination: {
-        el: ".pagination-swiper .span"
+        el: ".slider-box-1 .swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<div class="' +
+            className +
+            '"><span>' +
+            bullet[index] +
+            "</span></div>"
+          );
+        }
       },
 
       autoplay: {
-        delay:5000,
-        disableOnInteraction:false,
+        delay: 5000,
+        disableOnInteraction: false,
       },
       // Navigation arrows
       navigation: {
@@ -61,8 +80,8 @@ function SliderBox2__init() {
     // Navigation arrows
 
     autoplay: {
-    delay:5000,
-    disableOnInteraction:false,
+      delay: 5000,
+      disableOnInteraction: false,
     },
 
     navigation: {
@@ -74,10 +93,10 @@ function SliderBox2__init() {
 
 SliderBox2__init();
 
-$(window).scroll(function(){
+$(window).scroll(function () {
   let scroll = $(this).scrollTop();
   console.log(scroll);
-  if(scroll > 2000) { // 스크롤 위치가 2000이상일 때
+  if (scroll > 2000) { // 스크롤 위치가 2000이상일 때
     $('.sub-bg').removeClass('active');
     $('.sub-bg img').removeClass('active');
     $('.sub-bg').addClass('active');
