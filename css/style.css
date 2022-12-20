@@ -214,12 +214,12 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   border:3px solid red;
   display: flex;
   width: 550px;
-  left: auto;
+  left: 2200px;
   right: 100px;
 }
 
 .slider-box-1 .swiper .swiper-pagination .swiper-pagination-bullet {
-    border:3px solid red;
+    border:3px solid gold;
   border-radius: 0;
   width: calc(100% / 4);
   padding-bottom: 20px;
