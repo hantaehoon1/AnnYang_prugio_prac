@@ -147,6 +147,7 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
 }
 
 .slider-box-1 {
+  padding:90px 0 0 80px;
   width: 100%;
   padding: 90px 80px 0;
   transition: 0.3s;
@@ -211,15 +212,13 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
 }
 
 .slider-box-1 .swiper .swiper-pagination {
-  border:3px solid red;
   display: flex;
   width: 550px;
-  left: 2200px;
+  left: auto;
   right: 100px;
 }
 
 .slider-box-1 .swiper .swiper-pagination .swiper-pagination-bullet {
-    border:3px solid gold;
   border-radius: 0;
   width: calc(100% / 4);
   padding-bottom: 20px;
@@ -238,17 +237,16 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
 }
 
 .slider-box-1 .swiper .swiper-pagination-bullet-active {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(248, 246, 246, 1);
 }
 
 .slider-box-1 .swiper .swiper-pagination-bullet ~ .swiper-pagination-bullet {
-  border:3px solid blue;
   margin-left: 65px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .slider-box-1 .swiper .swiper-pagination-bullet ~ .swiper-pagination-bullet-active {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(248, 246, 246, 1);
 }
 
 .slider-box-1 .swiper-pagination-bullet ~ .swiper-pagination-bullet::before {
@@ -282,7 +280,7 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   height: 100%;
 }
 
-.cont {
+/* .cont {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -291,7 +289,7 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   color: #fff;
   text-align: center;
   margin-top: -60px;
-}
+} */
 
 aside {
   background-color: #fff;
@@ -301,12 +299,14 @@ aside {
   width: 80px;
   height: 100%;
   z-index: 250;
+ 
 }
 
 aside .ban {
   position: relative;
   width: 100%;
   height: 100%;
+  
 }
 
 aside .head-full {
@@ -314,6 +314,11 @@ aside .head-full {
   height: 90px;
   width: 100%;
   background: url("https://to2.kr/ecj") no-repeat center;
+  display: block;
+}
+
+aside a img {
+  display: block;
 }
 
 aside .sns li:nth-child(1) a span {
@@ -357,13 +362,17 @@ aside .scroll {
   width: 100%;
   height: 866px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
 .premium7 .inner {
   margin-right: 50px;
 
+}
+
+.premium7 .innerwrap {
+  margin-left: 520px;
 }
 
 .slider-box-2 {
@@ -374,7 +383,7 @@ aside .scroll {
 
 .slider-box-2 .swiper {
   margin: 100px 0;
-  width: 1080px;
+  width: 1280px;
   overflow: visible;
 }
 

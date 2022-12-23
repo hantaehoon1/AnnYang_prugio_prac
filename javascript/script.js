@@ -74,7 +74,7 @@ function SliderBox2__init() {
     // Optional parameters
     loop: true,
     // 한 화면에 보일 슬라이드 개수
-    slidesPerView: 3.2,
+    slidesPerView: 4,
     // 슬라이드 간의 간격
     spaceBetween: 20,
     // Navigation arrows
