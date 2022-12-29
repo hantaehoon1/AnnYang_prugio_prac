@@ -148,36 +148,42 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
 
 .pop {
   position: absolute;
+  left:0;
+  top:130px;
   z-index: 111;
-  top:0;
 }
 
 .popwrap {
-  border:3px solid red;
+  
   position: relative;
-  top:0;
+  top:100px;
+  left:0;
+}
+
+.popwrap.open {
+  position: relative;
+  top:100px;
+  left:-400px;
 }
 
 .pop button {
-  /* border : 3px solid blue; */
-  background:url("images/popup-btn.jpg") no-repeat center;
+  background:url("https://www.prugio.com/ht/2022/anyang/web/img/popup-btn02.jpg") no-repeat;
+  background-size:contain;
   width:55px;
   height:200px;
   cursor:pointer;
-  box-sizing: border-box;
-  position:absolute;
   z-index: 999;
+  top:0;
 }
 
 .pop .pop-image {
-  position: absolute;
-  left:-400px;
+  position: relative;
+  float:left;
 }
 
 .slider-box-1 {
   padding:90px 0 0 80px;
   width: 100%;
-  padding: 90px 80px 0;
   transition: 0.3s;
   position: relative;
   height: 100vh;
