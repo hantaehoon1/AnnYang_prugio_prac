@@ -151,18 +151,17 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   left:0;
   top:130px;
   z-index: 111;
+  border:3px solid blue;
 }
 
 .popwrap {
-  
   position: relative;
-  top:100px;
   left:0;
+  border:3px solid red;
 }
 
 .popwrap.open {
   position: relative;
-  top:100px;
   left:-400px;
 }
 
@@ -172,13 +171,14 @@ li:nth-child(4)>.submenu>li>a:nth-child(7) {
   width:55px;
   height:200px;
   cursor:pointer;
+  border: none;
   z-index: 999;
-  top:0;
 }
 
 .pop .pop-image {
   position: relative;
   float:left;
+  border:3px solid gold
 }
 
 .slider-box-1 {
